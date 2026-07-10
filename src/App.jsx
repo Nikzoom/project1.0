@@ -201,12 +201,6 @@ function App() {
         </div>
       </section>
 
-      <div className="art-break">
-        <figure>
-          <img src="/art.jpg" alt="" loading="lazy" />
-        </figure>
-      </div>
-
       <section id="marshrut">
         <div className="wrap">
           <ScrollReveal>
