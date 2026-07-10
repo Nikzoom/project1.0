@@ -1,0 +1,38 @@
+@import "@fontsource-variable/inter-tight";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f6f5ef;
+  color: #1A1A1A;
+  font-family: 'Inter Variable', 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter Tight Variable', 'Inter Tight', system-ui, sans-serif;
+  font-weight: 500;
+  margin: 0;
+  color: #1A1A1A;
+  letter-spacing: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
