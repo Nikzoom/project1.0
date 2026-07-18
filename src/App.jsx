@@ -69,7 +69,7 @@ const content = {
       facts: [
         { value: '6–7', label: 'дней путешествия' },
         { value: '~20', label: 'часов групповой работы' },
-        { value: 'mini', label: 'небольшая группа — чтобы всем хватило места и внимания' },
+        { value: 'размер группы', label: 'небольшая группа — чтобы всем хватило места и внимания' },
       ],
     },
     results: {
@@ -88,9 +88,9 @@ const content = {
       title: 'Фотогалерея',
       note: 'Фото с прошлых туров в Грузию и ОАЭ. Скоро — кадры из Узбекистана.',
       photos: [
-        { src: 'photo_2026-07-17_15-38-30.jpg', alt: 'Группа тура в Грузии' },
-        { src: 'IMG_0164.JPG', alt: 'Терапевтическая группа после встречи' },
-        { src: 'IMG_0228.JPG', alt: 'Участницы тура в ОАЭ' },
+        { src: 'Tour_Georgia.webp', caption: 'Терапевтический тур в Грузию' },
+        { src: 'UAE_tour.webp', caption: 'Терапевтический тур в Дубае' },
+        { src: 'UAE_tour2.webp', caption: 'Терапевтический тур в Дубае' },
       ],
     },
     tour: {
@@ -183,9 +183,9 @@ const content = {
       title: 'Photo gallery',
       note: 'Photos from past tours to Georgia and the UAE. Uzbekistan frames coming soon.',
       photos: [
-        { src: 'photo_2026-07-17_15-38-30.jpg', alt: 'Tour group in Georgia' },
-        { src: 'IMG_0164.JPG', alt: 'Therapy group after a session' },
-        { src: 'IMG_0228.JPG', alt: 'Tour participants in the UAE' },
+        { src: 'Tour_Georgia.webp', caption: 'Therapy tour to Georgia' },
+        { src: 'UAE_tour.webp', caption: 'Therapy tour to Dubai' },
+        { src: 'UAE_tour2.webp', caption: 'Therapy tour to Dubai' },
       ],
     },
     tour: {
@@ -267,7 +267,7 @@ function App() {
               </a>
             </div>
             <ScrollReveal direction="right" className="hero-visual">
-              <img src={asset('photo_2026-07-17_15-38-30.jpg')} alt={t.hero.imgAlt} loading="eager" />
+              <img src={asset('hero_photo.webp')} alt={t.hero.imgAlt} loading="eager" />
             </ScrollReveal>
           </div>
         </section>
@@ -400,7 +400,8 @@ function App() {
               {t.gallery.photos.map((photo, i) => (
                 <ScrollReveal key={photo.src} delay={i * 0.1}>
                   <figure className="gallery-item">
-                    <img src={asset(photo.src)} alt={photo.alt} loading="lazy" />
+                    <img src={asset(photo.src)} alt={photo.caption} loading="lazy" />
+                    <figcaption>{photo.caption}</figcaption>
                   </figure>
                 </ScrollReveal>
               ))}

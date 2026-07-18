@@ -101,6 +101,7 @@ section { padding: 150px 0; }
 .gallery-grid > *:nth-child(2) { margin-top: 64px; }
 .gallery-item img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: saturate(.72); transition: transform .7s var(--transition), filter .7s var(--transition); }
 .gallery-item:hover img { transform: scale(1.03); filter: saturate(1); }
+.gallery-item figcaption { padding: 13px 14px; color: var(--ink-muted); font: .68rem 'JetBrains Mono Variable', monospace; letter-spacing: .08em; text-transform: uppercase; }
 
 .price-section { background: var(--accent-deep); color: var(--bg); }
 .price-section .eyebrow { color: rgba(246,245,239,.62); }
