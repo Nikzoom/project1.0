@@ -3,8 +3,7 @@ import { ArrowUpRight, Plus } from '@phosphor-icons/react';
 import './App.css';
 import { ScrollReveal } from './components/ScrollReveal';
 
-// TODO: заменить на реальную ссылку TG-канала проекта
-const TG_LINK = 'https://t.me/psycho_travel';
+const TG_LINK = 'https://t.me/+CzUHicyxoFowNmMy';
 
 // Учитывает base из vite.config.js (GitHub Pages собирается в /project1.0/)
 const asset = (name) => `${import.meta.env.BASE_URL}${name}`;
@@ -210,17 +209,14 @@ const detectLang = () => {
   return lang.startsWith('ru') || lang.startsWith('be') || lang.startsWith('uk') || lang.startsWith('kk') ? 'ru' : 'en';
 };
 
-const shareLinks = {
-  fb: (url) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
-  vk: (url) => `https://vk.com/share.php?url=${encodeURIComponent(url)}`,
-};
+const shareTelegram = (url) => `https://t.me/share/url?url=${encodeURIComponent(url)}`;
 
 function App() {
   const [lang, setLang] = useState(detectLang);
   const t = content[lang];
 
-  const openShare = (network) => {
-    window.open(shareLinks[network](window.location.href), '_blank', 'noopener,width=640,height=520');
+  const openShare = () => {
+    window.open(shareTelegram(window.location.href), '_blank', 'noopener,width=640,height=520');
   };
 
   return (
@@ -236,10 +232,9 @@ function App() {
             <a href="#tour">{t.nav.tour}</a>
           </nav>
           <div className="nav-tools">
-            <div className="share-buttons" role="group" aria-label={t.nav.share}>
-              <button type="button" onClick={() => openShare('fb')}>FB</button>
-              <button type="button" onClick={() => openShare('vk')}>VK</button>
-            </div>
+            <button type="button" className="share-tg" onClick={openShare} aria-label={t.nav.share}>
+              TG
+            </button>
             <button
               type="button"
               className="lang-toggle"

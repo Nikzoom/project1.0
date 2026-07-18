@@ -25,9 +25,8 @@ header { position: fixed; z-index: 50; inset: 0 0 auto; background: rgba(246,245
 .nav-links a { color: var(--ink-soft); text-decoration: none; font-size: .81rem; transition: color .2s ease; }
 .nav-links a:hover, .nav-links a:focus-visible { color: var(--accent); }
 .nav-tools { justify-self: end; display: flex; align-items: center; gap: 14px; }
-.share-buttons { display: flex; gap: 6px; }
-.share-buttons button { border: 1px solid var(--line); background: none; padding: 7px 10px; color: var(--ink-soft); font: 600 .68rem 'JetBrains Mono Variable', monospace; letter-spacing: .06em; cursor: pointer; border-radius: var(--radius); transition: color .2s ease, border-color .2s ease; }
-.share-buttons button:hover { color: var(--accent); border-color: var(--accent); }
+.share-tg { border: 1px solid var(--line); background: none; padding: 7px 10px; color: var(--ink-soft); font: 600 .68rem 'JetBrains Mono Variable', monospace; letter-spacing: .06em; cursor: pointer; border-radius: var(--radius); transition: color .2s ease, border-color .2s ease; }
+.share-tg:hover { color: var(--accent); border-color: var(--accent); }
 .lang-toggle { border: 1px solid var(--line); background: none; padding: 7px 10px; color: var(--ink-soft); font: 600 .68rem 'JetBrains Mono Variable', monospace; letter-spacing: .06em; cursor: pointer; border-radius: var(--radius); transition: color .2s ease, border-color .2s ease; }
 .lang-toggle:hover { color: var(--accent); border-color: var(--accent); }
 .nav-cta { display: inline-flex; align-items: center; gap: 7px; border: 0; padding: 11px 15px; background: var(--accent); color: var(--bg); font: 600 .8rem 'Inter Tight Variable', sans-serif; text-decoration: none; cursor: pointer; border-radius: var(--radius); transition: transform .2s var(--transition), background .2s ease; }
@@ -130,7 +129,7 @@ footer a:hover { text-decoration: underline; }
 @media (max-width: 760px) {
   .wrap, .nav { width: min(100% - 40px, 1360px); }
   .nav { height: 65px; grid-template-columns: 1fr auto; }
-  .nav-links, .share-buttons { display: none; }
+  .nav-links, .share-tg { display: none; }
   .nav-tools { gap: 10px; }
   .nav-cta span { display: none; }
   .nav-cta { padding: 10px 12px; }
