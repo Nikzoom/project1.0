@@ -5,6 +5,9 @@ import { ScrollReveal } from './components/ScrollReveal';
 
 const TG_LINK = 'https://t.me/+CzUHicyxoFowNmMy';
 
+// Личка в Telegram для кнопки «Написать нам»
+const CONTACT_TG = 'https://t.me/lenakubapsy18';
+
 // Учитывает base из vite.config.js (GitHub Pages собирается в /project1.0/)
 const asset = (name) => `${import.meta.env.BASE_URL}${name}`;
 
@@ -16,7 +19,7 @@ const content = {
       how: 'Как проходит',
       gallery: 'Галерея',
       tour: 'Тур',
-      cta: 'Присоединиться',
+      cta: 'Написать нам',
       share: 'Поделиться',
     },
     hero: {
@@ -84,11 +87,9 @@ const content = {
     },
     gallery: {
       eyebrow: '05 / атмосфера',
-      title: 'Фотогалерея',
-      note: 'Фото с прошлых туров в Грузию и ОАЭ. Скоро — кадры из Узбекистана.',
+      title: 'Где мы были',
       photos: [
         { src: 'Tour_Georgia.webp', caption: 'Терапевтический тур в Грузию' },
-        { src: 'UAE_tour.webp', caption: 'Терапевтический тур в Дубае' },
         { src: 'UAE_tour2.webp', caption: 'Терапевтический тур в Дубае' },
       ],
     },
@@ -97,11 +98,11 @@ const content = {
       title: 'Узбекистан',
       dates: '30.09.26 — 06.10.26',
       note: 'Следующий терапевтический тур — в Узбекистан. У нас есть 2 места для участия.',
-      cta: 'Присоединиться',
+      cta: 'Написать нам',
     },
     footer: {
       copy: '© 2026 Психо-Тревел',
-      contacts: 'Контакты',
+      writeUs: 'Написать нам',
     },
   },
   en: {
@@ -111,7 +112,7 @@ const content = {
       how: 'How it works',
       gallery: 'Gallery',
       tour: 'Tour',
-      cta: 'Join us',
+      cta: 'Write to us',
       share: 'Share',
     },
     hero: {
@@ -179,11 +180,9 @@ const content = {
     },
     gallery: {
       eyebrow: '05 / atmosphere',
-      title: 'Photo gallery',
-      note: 'Photos from past tours to Georgia and the UAE. Uzbekistan frames coming soon.',
+      title: "Where we've been",
       photos: [
         { src: 'Tour_Georgia.webp', caption: 'Therapy tour to Georgia' },
-        { src: 'UAE_tour.webp', caption: 'Therapy tour to Dubai' },
         { src: 'UAE_tour2.webp', caption: 'Therapy tour to Dubai' },
       ],
     },
@@ -192,11 +191,11 @@ const content = {
       title: 'Uzbekistan',
       dates: 'Sep 30 — Oct 6, 2026',
       note: 'The next therapy tour heads to Uzbekistan. We have 2 spots left.',
-      cta: 'Join the tour',
+      cta: 'Write to us',
     },
     footer: {
       copy: '© 2026 Psycho-Travel',
-      contacts: 'Contacts',
+      writeUs: 'Write to us',
     },
   },
 };
@@ -243,7 +242,7 @@ function App() {
             >
               {lang === 'ru' ? 'EN' : 'RU'}
             </button>
-            <a className="nav-cta" href={TG_LINK} target="_blank" rel="noopener">
+            <a className="nav-cta" href={CONTACT_TG} target="_blank" rel="noopener">
               <span>{t.nav.cta}</span><ArrowUpRight size={18} weight="bold" aria-hidden="true" />
             </a>
           </div>
@@ -385,10 +384,7 @@ function App() {
             <ScrollReveal>
               <div className="section-head">
                 <span className="eyebrow">{t.gallery.eyebrow}</span>
-                <div>
-                  <h2 className="display-lg">{t.gallery.title}</h2>
-                  <p className="body-md team-intro">{t.gallery.note}</p>
-                </div>
+                <h2 className="display-lg">{t.gallery.title}</h2>
               </div>
             </ScrollReveal>
             <div className="gallery-grid">
@@ -417,7 +413,7 @@ function App() {
               <ScrollReveal delay={0.1}>
                 <div className="price-details">
                   <p>{t.tour.note}</p>
-                  <a className="btn-primary" href={TG_LINK} target="_blank" rel="noopener">
+                  <a className="btn-primary" href={CONTACT_TG} target="_blank" rel="noopener">
                     <span>{t.tour.cta}</span><ArrowUpRight size={18} weight="bold" aria-hidden="true" />
                   </a>
                 </div>
@@ -430,12 +426,9 @@ function App() {
       <footer>
         <div className="wrap footer-inner">
           <span>{t.footer.copy}</span>
-          <span>
-            {t.footer.contacts}:{' '}
-            <a href={TG_LINK} target="_blank" rel="noopener">
-              Telegram
-            </a>
-          </span>
+          <a href={CONTACT_TG} target="_blank" rel="noopener">
+            {t.footer.writeUs}
+          </a>
         </div>
       </footer>
 
@@ -444,7 +437,7 @@ function App() {
           <span className="p">{t.tour.title}</span>
           <span className="l">{t.tour.dates}</span>
         </div>
-        <a className="btn-primary" href={TG_LINK} target="_blank" rel="noopener">
+        <a className="btn-primary" href={CONTACT_TG} target="_blank" rel="noopener">
           <span>{t.tour.cta}</span><Plus size={16} weight="bold" aria-hidden="true" />
         </a>
       </div>

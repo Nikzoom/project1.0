@@ -95,7 +95,7 @@ section { padding: 150px 0; }
 .journey-item .num { display: block; font-family: 'JetBrains Mono Variable', monospace; font-size: .7rem; line-height: 1.4; letter-spacing: .04em; color: var(--accent); margin-bottom: 24px; }
 .journey-item p { max-width: 52ch; margin: 0; color: var(--ink-soft); font-size: .97rem; line-height: 1.6; }
 
-.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 48px); align-items: start; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(20px, 3vw, 48px); align-items: start; }
 .gallery-item { margin: 0; overflow: hidden; background: var(--accent-pale); border-radius: var(--radius); }
 .gallery-grid > *:nth-child(2) { margin-top: 64px; }
 .gallery-item img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: saturate(.72); transition: transform .7s var(--transition), filter .7s var(--transition); }
