@@ -89,7 +89,7 @@ const content = {
       eyebrow: '05 / атмосфера',
       title: 'Где мы были',
       photos: [
-        { src: 'Tour_Georgia.webp', caption: 'Терапевтический тур в Грузию' },
+        { src: 'Tour_Georgia.webp', caption: 'Терапевтический тур в Грузии' },
         { src: 'UAE_tour2.webp', caption: 'Терапевтический тур в Дубае' },
       ],
     },
