@@ -10,6 +10,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/project1.0/Tour_Georgia.webp" />
     <title>Психо-Тревел — терапевтические путешествия</title>
+    <script>
+      // Применяем сохранённую палитру до первой отрисовки, чтобы не было вспышки
+      try {
+        var savedTheme = localStorage.getItem('psy-theme');
+        if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+      } catch (e) { /* ignore */ }
+    </script>
   </head>
   <body>
     <div id="root"></div>

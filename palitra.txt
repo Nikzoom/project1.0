@@ -1,0 +1,53 @@
+🌊 Вариант 3. Nordic Blue
+
+Больше доверия и ощущения профессионализма.
+
+Элемент	Цвет
+Background	#F5F7F8
+Surface	#E9EEF0
+Primary	#2E4E5A
+Accent	#78A6A8
+Secondary	#AAB9B6
+Text	#223033
+
+🌅 Вариант 2. Terracotta Retreat
+
+Если хочется ощущения тепла и путешествий.
+
+Элемент	Цвет
+Background	#F8F4EE
+Surface	#F1E7DB
+Primary	#4B5B47
+Accent	#C96F4A
+Secondary	#A58D73
+Text	#2D2D2D
+
+
+🌾 6. Sand & Olive
+
+Такую палитру любят дизайнеры luxury-отелей.
+
+Элемент	Цвет
+Background	#F5EFE5
+Surface	#ECE4D6
+Primary	#3F5648
+Secondary	#7A8A73
+Accent	#C9A66B
+Text	#2C2B28
+
+
+
+
+
+
+🪨 10. Stone Minimal
+
+Очень современная минималистичная палитра.
+
+Элемент	Цвет
+Background	#F2F2EE
+Surface	#E7E8E3
+Primary	#364540
+Secondary	#80857E
+Accent	#B89F7A
+Text	#242826

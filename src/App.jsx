@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ArrowUpRight, Plus } from '@phosphor-icons/react';
 import './App.css';
 import { ScrollReveal } from './components/ScrollReveal';
+import { ThemeSwitcher } from './components/ThemeSwitcher';
 
 const TG_LINK = 'https://t.me/+CzUHicyxoFowNmMy';
 
@@ -441,6 +442,8 @@ function App() {
           <span>{t.tour.cta}</span><Plus size={16} weight="bold" aria-hidden="true" />
         </a>
       </div>
+
+      <ThemeSwitcher />
     </>
   );
 }
