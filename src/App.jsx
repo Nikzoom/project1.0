@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ArrowUpRight, Plus } from '@phosphor-icons/react';
 import './App.css';
 import { ScrollReveal } from './components/ScrollReveal';
-import { ThemeSwitcher } from './components/ThemeSwitcher';
 
 const TG_LINK = 'https://t.me/+CzUHicyxoFowNmMy';
 
@@ -72,7 +71,7 @@ const content = {
       facts: [
         { value: '6–7', label: 'дней путешествия' },
         { value: '~20', label: 'часов групповой работы' },
-        { value: 'размер группы', label: 'небольшая группа — чтобы всем хватило места и внимания' },
+        { value: 'Количество участников', label: 'небольшая группа — чтобы всем хватило места и внимания' },
       ],
     },
     results: {
@@ -442,8 +441,6 @@ function App() {
           <span>{t.tour.cta}</span><Plus size={16} weight="bold" aria-hidden="true" />
         </a>
       </div>
-
-      <ThemeSwitcher />
     </>
   );
 }
